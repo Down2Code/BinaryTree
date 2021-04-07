@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Binary_Tree_DS_and_Basic_Operations</RootNamespace>
+    <SignAssembly>false</SignAssembly>
+    <Company>Sagar Salunkhe</Company>
+    <Authors>Sagar Salunkhe</Authors>
+    <RepositoryUrl>https://github.com/Down2Code/BinaryTree.git</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
