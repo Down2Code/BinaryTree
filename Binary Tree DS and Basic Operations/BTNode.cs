@@ -12,7 +12,7 @@ namespace Binary_Tree_DS_and_Basic_Operations
 
         public BTNode(int data)
         {
-
+            Data = data;
         }
     }
 }
