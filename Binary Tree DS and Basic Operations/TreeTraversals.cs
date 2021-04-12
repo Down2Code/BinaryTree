@@ -6,6 +6,11 @@ namespace Binary_Tree_DS_and_Basic_Operations
 {
     public static class TreeTraversals
     {
+        #region InOrder
+        /// <summary>
+        /// LDR Recursive
+        /// </summary>
+        /// <param name="root"></param>
         public static void InOrderRec(BTNode root)
         {
             if (root != null)
@@ -15,33 +20,62 @@ namespace Binary_Tree_DS_and_Basic_Operations
                 InOrderRec(root.RChild);
             }
         }
-        public static void PreOrderRec()
-        {
-
-        }
-        public static void LevelOrderRec()
-        {
-
-        }
-        public static void PostOrderRec()
-        {
-
-        }
+        /// <summary>
+        /// LDR iterative
+        /// </summary>
         public static void InOrder()
         {
 
         }
-        public static void PreOrder()
+        #endregion
+        #region PostOrder
+        /// <summary>
+        /// LRD Recursive
+        /// </summary>
+        public static void PostOrderRec()
         {
 
         }
+       
+        /// <summary>
+        /// LRD Iterative
+        /// </summary>
         public static void PostOrder()
         {
 
         }
+        #endregion
+        #region PreOrder
+        /// <summary>
+        /// DLR Iterative
+        /// </summary>
+        public static void PreOrder()
+        {
+
+        }
+        /// <summary>
+        /// DLR iteraive
+        /// </summary>
+        public static void PreOrderRec(BTNode root)
+        {
+            if (root != null)
+            {
+                Console.WriteLine(root.Data);
+                InOrderRec(root.LChild);
+                InOrderRec(root.RChild);
+            }
+        }
+        #endregion
+        #region LevelOrder
+        public static void LevelOrderRec()
+        {
+
+        }
+
         public static void LevelOrder()
         {
 
         }
+        #endregion   
     }
 }
