@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Binary_Tree_DS_and_Basic_Operations.BTProblems
+namespace Binary_Tree_DS_and_Basic_Operations.BTreeProblems
 {
     public class FindMaxInBTree
     {
