@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Binary_Tree_DS_and_Basic_Operations.BTProblems
 {
-    static class FindMaxInBTree
+    public class FindMaxInBTree
     {
         public static int FindMaxRecursive(BTNode root)
         {

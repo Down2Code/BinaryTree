@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Binary_Tree_DS_and_Basic_Operations
 {
-    public static class TreeTraversals
+    public class TreeTraversals
     {
         #region fields
         private static Stack<BTNode> btNodeStack;
