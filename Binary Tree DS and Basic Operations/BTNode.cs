@@ -4,15 +4,21 @@ using System.Text;
 
 namespace Binary_Tree_DS_and_Basic_Operations
 {
-    public class BTNode
+    public class BTNode:IDisposable
     {
-        public BTNode LChild { get; set; }
-        public int Data { get; set; }
-        public BTNode RChild { get; set; }
+        public BTNode LChild;
+        public int? Data;
+        public BTNode RChild;
 
         public BTNode(int data)
         {
             Data = data;
+        }
+        public void Dispose()
+        {
+            this.Data = null;
+            this.LChild = null;
+            this.RChild = null;
         }
     }
 }

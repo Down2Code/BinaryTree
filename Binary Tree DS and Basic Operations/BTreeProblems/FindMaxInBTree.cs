@@ -19,7 +19,7 @@ namespace Binary_Tree_DS_and_Basic_Operations.BTreeProblems
                 else
                     max = rightMax;
                 if (root.Data > max)
-                    max = root.Data;
+                    max = root.Data??0;
             }
             return max;
         }
@@ -34,7 +34,7 @@ namespace Binary_Tree_DS_and_Basic_Operations.BTreeProblems
                 {
                     var temp = btNodesQueue.Dequeue();
                     if (temp.Data > max)
-                        max = temp.Data;
+                        max = temp.Data??0;
                     if (temp.LChild!=null) btNodesQueue.Enqueue(temp.LChild);
                     if (temp.RChild != null) btNodesQueue.Enqueue(temp.RChild);
                 }
